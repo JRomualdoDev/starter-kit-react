@@ -56,6 +56,7 @@ USER www-data
 
 # Expose PHP-FPM port
 EXPOSE 8000
+EXPOSE 5173
 
 # Start PHP-FPM
 CMD ["php-fpm"]

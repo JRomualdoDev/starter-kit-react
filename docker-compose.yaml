@@ -3,13 +3,14 @@ networks:
     driver: bridge
 
 services:
-  app:
+  backend:
     build:
       context: ./auth-app
       dockerfile: Dockerfile
     container_name: auth-docker-app
     ports:
       - "8000:8000"
+      - "5173:5173"
     volumes:
       - ./auth-app:/var/www/html
     depends_on:
@@ -17,6 +18,7 @@ services:
         condition: service_healthy
     environment:
       - DB_HOST=postgresdb
+      - VITE_URL="http://host.docker.internal:5173" #alias especial do Docker que aponta para o IP do host
     networks:
       - application
     working_dir: /var/www/html
@@ -25,6 +27,8 @@ services:
       - |
         php artisan key:generate && \
         php artisan migrate --force && \
+        npm install && \
+        npm run dev & \
         php artisan serve --host=0.0.0.0 --port=8000
   db:
     image: postgres:17
