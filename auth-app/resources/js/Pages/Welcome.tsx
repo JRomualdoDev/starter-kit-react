@@ -223,12 +223,7 @@ export default function Welcome({
                                         </h2>
 
                                         <p className="mt-4 text-sm/relaxed">
-                                            Laravel News is a community driven
-                                            portal and newsletter aggregating
-                                            all of the latest and most important
-                                            news in the Laravel ecosystem,
-                                            including new package releases and
-                                            tutorials.
+                                            junior10115.
                                         </p>
                                     </div>
 

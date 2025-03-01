@@ -6,11 +6,11 @@
 5 silly config load:file:/usr/etc/npmrc
 6 verbose title npm install
 7 verbose argv "install"
-8 verbose logfile logs-max:10 dir:/var/www/html/.npm/_logs/2025-02-28T01_37_48_857Z-
-9 verbose logfile /var/www/html/.npm/_logs/2025-02-28T01_37_48_857Z-debug-0.log
+8 verbose logfile logs-max:10 dir:/var/www/html/.npm/_logs/2025-02-28T12_14_36_530Z-
+9 verbose logfile /var/www/html/.npm/_logs/2025-02-28T12_14_36_530Z-debug-0.log
 10 silly logfile start cleaning logs, removing 1 files
-11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
-12 silly logfile done cleaning log files
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
 13 silly idealTree buildDeps
 14 silly reify moves {}
 15 silly audit bulk request {
@@ -424,7 +424,7 @@
 123 silly reify mark deleted [ '/var/www/html/node_modules/@esbuild/android-arm' ]
 124 verbose reify failed optional dependency /var/www/html/node_modules/@esbuild/aix-ppc64
 125 silly reify mark deleted [ '/var/www/html/node_modules/@esbuild/aix-ppc64' ]
-126 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 360ms
+126 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 312ms
 127 silly audit report {}
 128 silly ADD
 129 silly ADD
